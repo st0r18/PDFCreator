@@ -1,17 +1,20 @@
-﻿using pdfforge.GpoReader;
+﻿//using pdfforge.GpoReader;
 using pdfforge.PDFCreator.Conversion.Settings.GroupPolicies;
 
 namespace pdfforge.PDFCreator.Core.GpoAdapter
 {
-    public class GpoReaderSettings : IGpoSettings
+    //public class GpoReaderSettings : IGpoSettings
+    public class GpoReaderSettings 
     {
-        private readonly GpoSettings _gpoSettings;
+        //private readonly GpoSettings _gpoSettings;
+        private readonly string _gpoSettings;
 
-        public GpoReaderSettings(GpoSettings gpoSettings)
+        //public GpoReaderSettings(GpoSettings gpoSettings)
+        public GpoReaderSettings(string gpoSettings)
         {
             _gpoSettings = gpoSettings;
         }
-
+/*
         public bool DisableApplicationSettings => _gpoSettings.DisableApplicationSettings;
         public bool DisableDebugTab => _gpoSettings.DisableDebugTab;
         public bool DisablePrinterTab => _gpoSettings.DisablePrinterTab;
@@ -28,5 +31,6 @@ namespace pdfforge.PDFCreator.Core.GpoAdapter
         public bool LoadSharedAppSettings => _gpoSettings.LoadSharedAppSettings;
         public bool LoadSharedProfiles => _gpoSettings.LoadSharedProfiles;
         public bool AllowUserDefinedProfiles => _gpoSettings.AllowUserDefinedProfiles;
+*/
     }
 }
